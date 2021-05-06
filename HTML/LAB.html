@@ -1,0 +1,46 @@
+<HTML>
+
+<HEAD>
+	<TITLE>Melaro Eduardo Sebastian - HTML - LAB2021</TITLE>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<style>
+		#formulario{
+			width: 250px;
+		}
+	</style>
+
+<script type="text/javascript" src="js/funciones.js"></script>  
+
+</HEAD>
+
+<BODY>
+<FORM id="formulario" onsubmit="return validar()" >
+	<fieldset>
+	<legend>Informacion Personal:</legend>
+	<LABEL for="nombre">Nombre:</LABEL><br>
+	<input type="text" id="lnombre"><br>
+	<LABEL for="apellido">Apellido:</LABEL><br>
+	<input type="text" id="lapellido"><br>
+	<LABEL for="edad">Edad:</LABEL><br>
+	<input type="text" id="ledad" style="width: 50px"><br>
+
+	<input type="radio" name="genero" value="masculino">
+	<LABEL for="edad">Masculino</LABEL><br>
+	<input type="radio" name="genero" value="femenino">
+	<LABEL for="edad">Femenino</LABEL><br>
+	<input type="radio" name="genero" value="otro">
+	<LABEL for="edad">Otro</LABEL><br>
+	</fieldset>
+
+	<fieldset>
+		<legend>Informacion adicional:</legend>
+	<LABEL for="edad">Empresa:</LABEL><br>
+	<input type="text" id="lemp"><br>
+	</fieldset>
+	<input type="submit" value="Enviar">
+	<input type="button" onclick="limpiar()" value="Limpiar">
+</FORM>
+</BODY>
+
+</HTML>
